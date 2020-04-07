@@ -1,18 +1,18 @@
 {
   "name": "@shadow/klasa-textchannel-gateway",
-  "version": "0.0.1-dev",
+  "version": "1.0.0",
   "description": "Klasa TextChannel Gateway: a simple plugin for the klasa bot framework that adds an efficient per-textchannel settings gateway.",
   "homepage": "https://klasa.js.org/",
   "bugs": {
-    "url": "https://github.com/bannerbombs-klasa-plugins/klasa-textchannel-gateway/issues"
+    "url": "https://org.dragondev.party/klasa-textchannel-gateway/issues"
   },
   "license": "MIT",
-  "author": "BannerBomb",
+  "author": ["BannerBomb", "dragonblitz10"],
   "main": "src/index.js",
   "types": "typings/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bannerbombs-klasa-plugins/klasa-textchannel-gateway.git"
+    "url": "https://org.dragondev.party/klasa-textchannel-gateway.git"
   },
   "scripts": {
     "lint": "npx eslint --fix src && npx eslint --fix --config .eslintrcmd.json --ext md guides && npx tslint --fix 'typings/*.ts'",
@@ -20,7 +20,7 @@
     "docs": "npx dg --source src --custom guides/.docconfig.json --output docs/docs.json --logging"
   },
   "peerDependencies": {
-    "klasa": "github:dirigeants/klasa#master"
+    "klasa": "github:dirigeants/klasa#settings"
   },
   "devDependencies": {
     "@types/node": "^12.0.8",
