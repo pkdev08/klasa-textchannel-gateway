@@ -23,7 +23,7 @@ module.exports = Structures.extend('TextChannel', TextChannel => {
 			 * @since 0.0.1
 			 * @type {external:Settings}
 			 */
-			this.settings = this.client.gateways.channels.create([this.guild.id, this.id]);
+			this.settings = this.client.gateways.get('channels').create([this.guild.id, this.id]);
 		}
 
 		/**
