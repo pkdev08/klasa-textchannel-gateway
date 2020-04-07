@@ -1,5 +1,4 @@
-This is the repository for the original klasa-textchannel-gateway package.
-
+This repo/package is a port to the settings branch, the orginal repo can be found [Here](https://github.com/bannerbombs-klasa-plugins/klasa-textchannel-gateway)
 # klasa-textchannel-gateway
 
 Simple plugin to manage an efficient per-textchannel settings gateway.
