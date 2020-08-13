@@ -3,11 +3,15 @@ This repo/package is a port to the settings branch, the orginal repo can be foun
 
 Simple plugin to manage an efficient per-textchannel settings gateway.
 
+## Note
+Due to the News Channel this will be the last update as I no longer have a use for this package, as discord will add more channels it should be simple enough to update the package however the updates **may cause all the settings to be reset** which isn't ideal.
+
+
 ## Installation
 
 ```bash
 # NPM
-$ npm install --save @shadow/klasa-textchannel-gateway
+$ npm install shadow/klasa-textchannel-gateway
 ```
 ## Setup
 
