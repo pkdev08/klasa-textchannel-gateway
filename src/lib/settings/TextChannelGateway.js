@@ -47,21 +47,17 @@ class TextChannelGateway extends Gateway {
 		return undefined;
 	}
 
-	/**
-	 * Create a new Settings for this gateway
-	 * @since 0.0.1
-	 * @param {string|string[]} id The id for this instance
-	 * @param {Object<string, *>} [data={}] The data for this Settings instance
-	 * @returns {external:Settings}
-	 */
-	create(id, data = {}) {
-		const [guildID, channelID] = typeof id === 'string' ? id.split('.') : id;
-		const entry = this.get([guildID, channelID]);
-		if (entry) return entry;
-		const settings = new this.Settings(this, { id: `${guildID}.${channelID}`, ...data });
-		if (this._synced) settings.sync();
-		return settings;
-	}
+    /**
+     * Create a new Settings for this gateway
+     * @since 0.0.1
+     * @param {*} target The holder for this Settings instance
+     * @param {string} [id = `${target.guild.id}.${target.id}`] The id for this instance
+     * @returns {external:Settings}
+     */
+     create(target, id = `${target[0]}.${target[1]}`) {
+        return super.create(target, id);
+    }
+
 
 	/**
 	 * Sync either all entries from the cache with the persistent database, or a single one.
