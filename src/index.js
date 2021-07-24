@@ -3,8 +3,6 @@ const { Client: { plugin } } = require('klasa');
 module.exports = {
 	KlasaTextChannel: require('./lib/extensions/KlasaTextChannel'),
 	TextChannelGateway: require('./lib/settings/TextChannelGateway'),
-	KlasaNewsChannel: require('./lib/extensions/KlasaNewsTextChannel'),
-	klasaChannelGateway: require('./lib/settings/NewsChannelGateway'),
 	Client: require('./lib/Client'),
 	[plugin]: require('./lib/Client')[plugin]
 };
@@ -20,10 +18,6 @@ module.exports = {
 /**
  * @external TextChannel
  * @see {@link https://discord.js.org/#/docs/main/master/class/TextChannel}
- */
-/**
- * @external NewsChannel
- * @see {@link https://discord.js.org/#/docs/main/master/class/NewsChannel}
  */
 /**
  * @external Settings
