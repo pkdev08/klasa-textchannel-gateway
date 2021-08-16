@@ -19,9 +19,6 @@
     "test": "npx eslint src && npx tslint 'typings/*.ts' && npx eslint --config .eslintrcmd.json --ext md guides && npx markdownlint guides README.md",
     "docs": "npx dg --source src --custom guides/.docconfig.json --output docs/docs.json --logging"
   },
-  "peerDependencies": {
-    "klasa": "github:dirigeants/klasa#settings"
-  },
   "devDependencies": {
     "@types/node": "^12.0.8",
     "docgen": "github:dirigeants/docsgen",
