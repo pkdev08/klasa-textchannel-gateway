@@ -1,5 +1,5 @@
 {
-  "name": "@shadow/klasa-textchannel-gateway",
+  "name": "klasa-channel-gateway",
   "version": "1.0.1",
   "description": "Klasa TextChannel Gateway: a simple plugin for the klasa bot framework that adds an efficient per-textchannel settings gateway.",
   "homepage": "https://klasa.js.org/",
